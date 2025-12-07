@@ -1,0 +1,10 @@
+imagekit libraray: a set of client-side tools (like the React SDK) that helps developers integrate with the ImageKit.io platform, a service for optimizing, transforming, storing, and delivering images and videos. This allows applications to perform actions like resizing, cropping, and changing image quality in real-time by simply modifying the image URL
+
+
+
+
+emoji ke liye ek libraray use kiya hai EMOJI PICKER REACT
+
+
+TANSTACK query LIBRARY - this is the library in react use for server state management means: fetching catching updation from the api, automate bg fetching and so many task
+CORS- it decide which website are allowed to talk to my backend
