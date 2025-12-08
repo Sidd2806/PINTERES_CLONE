@@ -1,7 +1,4 @@
 import mongoose, { Schema }  from "mongoose"
-
-
-
 const commentSchema= new Schema({
     description:{
         type:String,
@@ -22,4 +19,4 @@ const commentSchema= new Schema({
     timestamps:true
  }
 )
-export default mongoose.model("comment",commentSchema)
+export default mongoose.model("Comment",commentSchema)

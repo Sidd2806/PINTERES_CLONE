@@ -8,3 +8,8 @@ emoji ke liye ek libraray use kiya hai EMOJI PICKER REACT
 
 TANSTACK query LIBRARY - this is the library in react use for server state management means: fetching catching updation from the api, automate bg fetching and so many task
 CORS- it decide which website are allowed to talk to my backend
+
+
+
+ZUSTAND- a library used for the state management(like redux)
+persist in Zustand is a middleware that automatically saves your store to storage (localStorage, sessionStorage, IndexedDB, etc.), so the data does NOT disappear on page refresh

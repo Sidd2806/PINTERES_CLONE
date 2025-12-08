@@ -16,7 +16,7 @@ app.use(cors({
 app.use(express.json())
 app.use("/users", userRouter);
 app.use("/boards", boardRouter);
-app.use("/comment", commentRouter);
+app.use("/comments", commentRouter);
 app.use("/pins", pinRouter);
 
 app.use("/test", (req, res) => {
