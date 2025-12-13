@@ -6,6 +6,7 @@ import boardRouter from "./routes/board.routes.js";
 import commentRouter from "./routes/comment.routes.js";  
 import pinRouter from "./routes/pin.routes.js";  
 import connectDB from "./utils/connectDB.js";
+import cookieParser  from "cookie-parser";
 const app = express();    
 
 
@@ -13,6 +14,7 @@ app.use(cors({
   origin: process.env.CLIENT_URL,
   credentials: true
 })); 
+app.use(cookieParser());
 app.use(express.json())
 app.use("/users", userRouter);
 app.use("/boards", boardRouter);
