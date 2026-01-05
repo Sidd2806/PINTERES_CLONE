@@ -13,3 +13,7 @@ CORS- it decide which website are allowed to talk to my backend
 
 ZUSTAND- a library used for the state management(like redux)
 persist in Zustand is a middleware that automatically saves your store to storage (localStorage, sessionStorage, IndexedDB, etc.), so the data does NOT disappear on page refresh
+
+
+
+sharp->We use Sharp to resize, compress, optimize, and standardize images before saving or uploading them — making apps faster, cheaper, and more scalable.
