@@ -105,6 +105,21 @@ export const createPin = async (req, res) => {
   const textTopPosition = Math.round(
     (parsedTextOptions.top * height) / parsedCanvasOptions.height
   );
+
+  // const transformationString = `w-${width},h-${height}${
+  //   originalAspectRatio > clientAspectRatio ? ",cm-pad_resize" : ""
+  // },bg-${parsedCanvasOptions.backgroundColor.substring(1)}${
+  //   parsedTextOptions.text
+  //     ? `,l-text,i-${parsedTextOptions.text},fs-${
+  //         parsedTextOptions.fontSize * 2.1
+  //       },lx-${textLeftPosition},ly-${textTopPosition},co-${parsedTextOptions.color.substring(
+  //         1
+  //       )},l-end`
+  //     : ""
+  // }`;
+
+  // FIXED TRANSFORMATION STRING
+
   let croppingStrategy = "";
 
   if (parsedCanvasOptions.size !== "original") {
@@ -251,4 +266,3 @@ export const interact = async (req, res) => {
 
   return res.status(200).json({ message: "Successful" });
 };
-

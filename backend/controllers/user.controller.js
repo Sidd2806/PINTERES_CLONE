@@ -29,6 +29,8 @@ export const registerUser = async (req, res) => {
 
   res.status(201).json(detailsWithoutPassword);
 };
+
+
 // LOGINUSER
 export const loginUser = async (req, res) => {
   const { password, email } = req.body;
@@ -39,7 +41,7 @@ export const loginUser = async (req, res) => {
   if (!user) {
     return res.status(401).json({ message: "Invalid email or pass" });
   }
-  const isPasswordCorrect = await bcrypt.compare(password, user.hashedPassword);
+  const isPasswordCorrect =  bcrypt.compare(password, user.hashedPassword);
 
   if (!isPasswordCorrect) {
     return res.status(401).json({ message: "Wrong pass" });
@@ -61,6 +63,7 @@ export const logoutUser = async (req, res) => {
   res.clearCookie("token");
   res.status(200).json({ message: "Logout succesful" });
 };
+
 // GETUSERRRR
 export const getUser = async (req, res) => {
   const { username } = req.params;
@@ -93,7 +96,7 @@ export const getUser = async (req, res) => {
           isFollowing: isExists ?true:false,
         });
       }
-      req.userId = payload.userid;
+      // req.userId = payload.userid;
     });
   }
 };

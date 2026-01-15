@@ -1,6 +1,6 @@
 import express from "express"
+import {getUserBoards} from "../controllers/board.controller.js"
 const router=express.Router()
-import {getUserBoards} from "../contollers/board.controller.js"
 
 router.get("/:userId",getUserBoards)
 

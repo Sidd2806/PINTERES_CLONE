@@ -1,3 +1,5 @@
+import dotenv from "dotenv";
+dotenv.config();
 import User from "../models/user.model.js";
 import Pin from "../models/pin.model.js";
 import Board from "../models/board.model.js";

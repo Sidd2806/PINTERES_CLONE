@@ -5,8 +5,9 @@ import {
   loginUser,
   logoutUser,
   followUser
-} from "../contollers/user.controller.js";
-import {verifyToken} from "../middlewares/verifyToken.js"
+} from "../controllers/user.controller.js";
+import { verifyToken } from "../middlewares/verifyToken.js";
+
 
 const router = express.Router();
 router.get("/:username", getUser);

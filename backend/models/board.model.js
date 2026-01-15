@@ -1,8 +1,4 @@
-
 import mongoose, { Schema }  from "mongoose"
-
-
-
 const boardSchema= new Schema({
     title:{
         type:String,
